@@ -1,0 +1,10 @@
+FICTIONAL CASES - no actions have been performed.
+
+T01 - Display blank
+One employee's desktop powers on and the monitor shows No Signal. The monitor power light is on. Other desks work. The employee has not reported smoke, damage or unusual noise. Spare approved video cable available.
+
+T02 - Shared folder denied
+One new starter can sign in and browse the intranet but receives Access Denied for the project share. A colleague can open it. The starter's manager says they need access, but no approved access request is attached.
+
+T03 - Slow computer
+A user reports slow application launches. A supplied snapshot shows CPU 12%, memory 91%, and storage 98% full. No malware finding or hardware diagnostic result is supplied. The user has unsaved work and is about to join a meeting.
