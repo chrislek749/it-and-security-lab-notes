@@ -1,39 +1,40 @@
 # IT and Security Lab Notes
 
-Small practical labs covering sign-in investigations, phishing triage, IT support and a home media-server plan.
+Practical case studies covering sign-in analysis, phishing triage, IT support and a home media-server design.
 
-## Start here
+## Finished casework
 
-- [Authentication investigation walkthrough](LEARN_WITH_ME.md)
-- [Worked incident report](WORKED_REPORT.md)
-- [Home media-server plan](MEDIA_SERVER.md)
-- [Download all project workbooks](project-workbooks.zip), including phishing cases, support tickets, CSV templates and generated reference results
+Read the [completed assessments and support handover](COMPLETED_CASEWORK.md).
 
-## What is finished?
+- Authentication: 24 fictional sign-ins analysed, with 17 failures, 7 successes and three overlapping rule alerts; all four automated tests pass
+- Phishing: [three completed email assessments](phishing-triage/triage.csv), with evidence, missing context and next steps
+- IT support: [three completed ticket assessments](it-support/tickets.csv), with diagnostic plans and escalation criteria
+- Personal PC: CPU, GPU, RAM and power supply assembled by the owner
+- Home media server: [Jellyfin design and test plan](MEDIA_SERVER.md); installation and device testing remain outstanding
 
-| Project | Status |
-|---|---|
-| Personal PC build | Owner confirms assembling the CPU, GPU, RAM and PSU; component records pending |
-| Authentication lab | Working reference tool, 24 synthetic events, generated evidence and four passing tests; learner investigation pending |
-| Phishing triage | Three fictional cases and worked answers prepared; learner responses pending |
-| IT support | Three fictional cases and tracker prepared; learner responses pending |
-| Home media server | Jellyfin design and test plan prepared; not installed |
+The written casework is complete. Physical checks in the support cases are proposed, not recorded as repairs. The portfolio includes supplied code and reference analysis; it does not claim independent programming or personal investigation of live systems.
 
-## Run the authentication lab
+## Run the log analysis
 
-Python 3.10 or newer; no extra packages needed. Run these commands from the repository folder:
+Python 3.10 or newer; standard library only. From the repository folder:
 
 ```text
 python analyse.py
 python -m unittest -v test_analyse.py
 ```
 
-The tool writes `results/events.csv`, `results/findings.json` and `results/evidence_summary.md`. Expected totals: 24 events, 17 failures and 7 successes. First rule triggers: E009, E015 and E017. The tests also check benign retries, events outside the time window and separation between accounts.
+The tool creates `results/events.csv`, `results/findings.json` and `results/evidence_summary.md`. The checked-in [findings](authentication-lab/results/findings.json) and [event table](authentication-lab/results/events.csv) record the completed run.
 
-No coding is needed to complete the learner investigation: read the log or generated CSV and fill in the report template. The complete workbooks archive includes pre-generated results.
+## Guides and source cases
 
-## Contributions and limitations
+- [Authentication walkthrough](LEARN_WITH_ME.md)
+- [Worked incident report](WORKED_REPORT.md)
+- [Fictional email cases](phishing-triage/messages.txt)
+- [Fictional support cases](it-support/cases.txt)
+- [Original exercise workbook bundle](project-workbooks.zip)
 
-The teaching materials, Python tool and worked reference answers were prepared with OpenAI Codex. They are not a claim that the owner independently wrote the tool or completed the investigations. Personal reports and reflections will be added as the exercises are completed.
+The original guides and workbook templates remain available for practice. The completed assessments above contain the latest results.
 
-The logs, email messages and support tickets are fictional. The rules are teaching examples, not production detections: alerts require review and do not prove compromise. No real accounts were investigated, and no media server was installed by creating this repository.
+## Limits
+
+All sign-ins, emails and tickets are fictional. Alerts are review signals, not confirmed attacks. The small dataset does not establish production detection accuracy. No live accounts were changed, no client devices were repaired in these exercises, and no media server has been installed.
