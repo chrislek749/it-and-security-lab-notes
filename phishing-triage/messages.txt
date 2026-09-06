@@ -1,0 +1,25 @@
+FICTIONAL DATA ONLY. Header results are invented for this lab, not live checks.
+
+MESSAGE P01
+From: Staff IT <helpdesk@staff-support.example>
+Reply-To: verify@account-check.example
+Subject: Password expires in 30 minutes
+Authentication-Results: SPF=pass; DKIM=pass; DMARC=pass (staff-support.example)
+Body: Keep your mailbox active. Enter your current password at https://account-check.example/verify now.
+Context: The fictional employer's approved domain is northstar.example. No approved external helpdesk is listed in the supplied context.
+
+MESSAGE P02
+From: Finance <finance@northstar.example>
+Reply-To: finance@northstar.example
+Subject: New supplier bank details
+Authentication-Results: SPF=pass; DKIM=pass; DMARC=pass
+Body: Please update our supplier bank account today. Details attached in bank-details.pdf.
+Context: A supplier update was expected this week, but the account change has not been independently verified. Attachment contents are not supplied.
+
+MESSAGE P03
+From: Training <training@northstar.example>
+Reply-To: training@northstar.example
+Subject: Security workshop reminder
+Authentication-Results: SPF=pass; DKIM=pass; DMARC=pass
+Body: Your workshop starts tomorrow at 10:00. Open the company learning portal from your usual bookmark to view the schedule.
+Context: The user registered for the workshop. No links or attachments are included.
