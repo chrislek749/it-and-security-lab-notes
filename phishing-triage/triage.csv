@@ -1,0 +1,4 @@
+message_id,verdict,evidence,missing_context,next_step
+P01,Suspicious,Password request; unapproved staff-support.example sender; account-check.example reply-to and link; 30-minute deadline,Whether an external service is approved; full headers and interaction history,Report through known IT channel; do not click or reply; if credentials were entered seek immediate account review
+P02,Uncertain - verify before action,"Expected supplier change and matching sender, but payment details are unverified; attachment not supplied",Independent confirmation from established supplier contact; full headers; attachment analysis,Hold change and verify using existing contact details and payment-change procedure
+P03,Lower concern,Expected workshop; matching sender and reply-to; no links or attachments; directs to saved bookmark,Full headers and independent portal schedule,Check schedule through existing bookmark; no evidence requiring urgent escalation
