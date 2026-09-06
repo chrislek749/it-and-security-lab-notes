@@ -1,0 +1,47 @@
+{
+  "total": 24,
+  "results": {
+    "SUCCESS": 7,
+    "FAILURE": 17
+  },
+  "alerts": [
+    {
+      "rule": "MULTI_ACCOUNT_FAILURES",
+      "trigger": "E009",
+      "source_ip": "198.51.100.23",
+      "evidence": [
+        "E005",
+        "E006",
+        "E007",
+        "E008",
+        "E009"
+      ]
+    },
+    {
+      "rule": "REPEATED_ACCOUNT_FAILURES",
+      "trigger": "E015",
+      "source_ip": "203.0.113.44",
+      "evidence": [
+        "E011",
+        "E012",
+        "E013",
+        "E014",
+        "E015"
+      ]
+    },
+    {
+      "rule": "SUCCESS_AFTER_FAILURES",
+      "trigger": "E017",
+      "source_ip": "203.0.113.44",
+      "evidence": [
+        "E011",
+        "E012",
+        "E013",
+        "E014",
+        "E015",
+        "E016",
+        "E017"
+      ]
+    }
+  ]
+}
